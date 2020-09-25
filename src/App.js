@@ -1,11 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello World</p>
-    </div>
+    <BrowserRouter>
+      <div className="App" style={{}}>
+        <Navbar />
+      </div>
+    </BrowserRouter>
   );
 }
 
